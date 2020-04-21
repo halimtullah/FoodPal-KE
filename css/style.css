@@ -49,6 +49,7 @@ h1
 {
   text-align: center;
   font-family: 'Cookie', cursive;
+  background-image: url("../image/food.jpg");
 }
 #contact
 {
@@ -126,4 +127,8 @@ h1
     width: auto;
     height: 100%;
   }
+}
+body
+{
+  margin-left: 2px;
 }
