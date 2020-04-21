@@ -132,3 +132,12 @@ body
 {
   margin-left: 2px;
 }
+.about
+{
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+}
+.aboutustext
+{
+  font-size: 30px;
+}
