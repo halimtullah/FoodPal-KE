@@ -49,7 +49,6 @@ h1
 {
   text-align: center;
   font-family: 'Cookie', cursive;
-  background-image: url("../image/food.jpg");
 }
 #contact
 {
@@ -136,6 +135,8 @@ body
 {
   text-align: center;
   font-family: 'Special Elite', cursive;
+  background-image: url("../image/food2.jpg");
+  font-weight: bolder;
 }
 .aboutustext
 {
