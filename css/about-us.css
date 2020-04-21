@@ -25,7 +25,7 @@
 h2
 {
   font-family: 'Special Elite', cursive;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
 }
 #about
@@ -35,6 +35,21 @@ h2
   font-size: 40px;
   background-image: url("../image/fruity.jpg");
   background-size: cover;
-  color: aqua;
+  color: whitesmoke;
   z-index: -8;
+}
+#about
+{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+}
+.about-overlay
+{
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 4%;
+  margin-right: 4%;
+  padding-bottom: 20px;
+  padding-left: 4%;
 }
