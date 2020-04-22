@@ -3,33 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="css/listing.css" type="text/css" rel="stylesheet">
 </head>
 <body style="height:1500px">
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Food Pals</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Cereals</a></li>
-      <li><a href="#">Packed</a></li>
-      <li><a href="#">Canned </a></li>
-    </ul>
-  </div>
-</nav>
+<div id="products">
+  <div id="shown">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Food Pals</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Cereals</a></li>
+          <li><a href="#">Packed</a></li>
+          <li><a href="#">Canned </a></li>
+        </ul>
+      </div>
+    </nav>
 
     <div class="container">
         <img src="image/foodpals-search-banner.jpg" alt="foodpals" width="100%" height="30%">
         <div class="centered">Food Pals</div>
-    </div>   
+    </div>
+  </div>   
 
-<div class="card">
+ <div id="notshown">
+  <div class="card">
     <img src="image/cran-berry.jpeg" alt="cran-berry" style="width: 5%">
     <h5>Cran Berry</h5>
     <h5 class="price">sh 150</h5>
@@ -70,14 +75,88 @@
     <h5>30 days to go</h5>
     <h5><button>Add to Cart</button></h5>
   </div>
+  <div class="card">
+    <h3><input type="submit" class="btn btn-success proceed" id="proceedbtn" value="Proceed"></h3>
+  </div>
+ </div>
   
+</div>
 
-
-
-  
-  
-  
-
+<div id="checkout">
+  <div class="row">
+      <div class="col-75">
+        <div class="container1">
+          <form>
     
+            <div class="row">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Names</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your Full Names">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="email@example.com">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="Your area">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="Your City">
+    
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">County</label>
+                    <input type="text" id="county" name="county" placeholder="county">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Mpesa Accepted</label><label for="fname">Airtel Money Accepted</label>
+                <img src="/image/mpesa.png" width="20%">
+                <img src="/image/airtel-money.gif" width="20%">
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Lipa na Mpesa</label>
+                <input type="text" id="cname" name="cardname" placeholder="Lipa na Mpesa">
+                <label for="ccnum">Pay Bill Number</label>
+                <div class="card"><p>476589</p></div>
+                <label for="expmonth">Lipa na Bonga Points</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="lipa na bonga points">
+
+                <label for="expmonth">Airtel Money</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="Airtel Money">
+              
+              </div>
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Delivery address same as billing
+            </label>
+            <input type="submit" value="Continue to checkout" class="btn">
+          </form>
+        </div>
+      </div>
+    
+      <div class="col-25">
+        <div class="container1">
+          <h4>Items added to Cart</h4>
+            <span class="price" style="color:black">
+              <i class="fa fa-shopping-cart"></i>
+              <b>4</b>
+            </span>
+          </h4>
+          <p><a href="#">Cereals</a> <span class="price">ksh 100</span></p>
+          <p><a href="#">Canned</a> <span class="price">ksh 100</span></p>
+          <p><a href="#">Packaged</a> <span class="price">ksh 100</span></p>
+          <p><a href="#">Beverages</a> <span class="price">ksh 100</span></p>
+          <hr>
+          <p>Total <span class="price" style="color:black"><b>ksh 400</b></span></p>
+        </div>
+      </div>
+    </div>
+  
+  </div>
 </body>
 </html>
