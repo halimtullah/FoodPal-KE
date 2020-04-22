@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <title>FoodPals</title>
-    
-</head>
-<body>
-    
-    
-    <header><h2>FoodPal!</h2></header>
-<section>
-    <nav>
-        <ul>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">CEREALS</a></li>
-            <li><a href="#">GRAINS</a></li>
-            <li><a href="#">CANNED</a></li>
-            <li><a href="#">PACKED</a></li>
-            <li><a href="#">BEVERAGES</a></li>
-        </ul>
-    </nav>
-    <label>Select Category:</label>
-                <select class="custom-select custom-select-md mb-3" id="size" required="">
-                    <option value="cereal">Cereals</option>
-                    <option value="grains">Grains</option>
-                    <option value="canned">Canned</option>
-                    <option value="beverages">Beverages</option>
-                </select>
-                <input type="text" class="form-control" id="text" placeholder="Enter your location">
-            
-        <div class="landing">
-                    <img src="/image/supmkt.jpeg" height="1000px" alt="supmkt-img">
-                
-
-<div class="centered">
-    <h1>FoodPal</h1>
-    <p>Food is being wasted at an alarming rate. In the recent years food waste has been a global issue <br>
-        costing billions of dollars and increase carborn emissions, hence global warming. <br>
-        and yet food poverty has been on the rise.</p>
-    <p>Research indicates that if food waste were a country it could be a third country producer <br>
-        of carborn emission in the world after China and USA.</p>
-</div>
-</div>
-
-</section>
-
-    <div class="about">
-        <h1>ABOUT US</h1>
-        <p>Food Pals is a web application service that provide affodable source of nutrition to economically challenged people.</p>
-        <p>We have patnered with retailers to enable access to food products about to get expired to reach the needy people.</p>
-        <p>This is a win win situation where retailers sell products at discounted prices and the less fortunate people get access to quality food, hence feed the community.</p>
-    </div>
-    <footer>
-        <p>Contacts</p>
-    </footer>
-    <script src="js/script.js"></script>
-    
-            
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+        <link href="css/styles.css" type="text/css" rel="stylesheet">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/script.js"></script>
+        <title>FoodPals</title>
+    </head>
+    <body>
+        <header>
+            <h2>FoodPal!</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="#">CEREALS</a>
+                    </li>
+                    <li>
+                        <a href="#">GRAINS</a>
+                    </li>
+                    <li>
+                        <a href="#">CANNED</a>
+                    </li>
+                    <li>
+                        <a href="#">PACKED</a>
+                    </li>
+                    <li>
+                        <a href="#">BEVERAGES</a>
+                    </li>
+                </ul>
+            </nav>
+            <label>Select Category:</label>
+            <select class="custom-select custom-select-md mb-3" id="size" required="">
+                <option value="cereal">Cereals</option>
+                <option value="grains">Grains</option>
+                <option value="canned">Canned</option>
+                <option value="beverages">Beverages</option>
+            </select>
+            <input
+                type="text"
+                class="form-control"
+                id="text"
+                placeholder="Enter your location"
+            >
+            <div class="landing">
+                <img src="/image/supmkt.jpeg" height="1000px" alt="supmkt-img">
+                <div class="centered">
+                    <h1>FoodPal</h1>
+                    <p>Food is being wasted at an alarming rate. In the recent years food waste has been a global issue
+                        <br>
+                        costing billions of dollars and increase carborn emissions, hence global warming.
+                        <br>
+                        and yet food poverty has been on the rise.
+                    </p>
+                    <p>Research indicates that if food waste were a country it could be a third country producer
+                        <br>
+                        of carborn emission in the world after China and USA.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="about">
+            <h1>ABOUT US</h1>
+            <p>Food Pals is a web application service that provide affodable source of nutrition to economically challenged people.</p>
+            <p>We have patnered with retailers to enable access to food products about to get expired to reach the needy people.</p>
+            <p>This is a win win situation where retailers sell products at discounted prices and the less fortunate people get access to quality food, hence feed the community.</p>
+        </div>
+        <footer>
+            <p>Contacts</p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
 </html>
