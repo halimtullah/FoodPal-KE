@@ -145,4 +145,15 @@
     }
   }
 
+  .custom-control.custom-checkbox.custom-control-inline
+  {
+    text-align: center;
+  }
+
+  #cart1i,#cart2i,#cart3i,#cart4i,#cart5i
+  {
+    display: none;
+    color: red;
+  }
+
   

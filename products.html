@@ -41,7 +41,11 @@
     <h5 class="price">sh 150</h5>
     <h5>Was sh 200</h5>
     <h5>30 days to go</h5>
-    <h5><button class="add" id="add">Add to Cart <i class="fas fa-cart-plus"></i></button></h5>
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="cart1" value="cart1" name="carts1" onclick="myFunc()">
+      <label class="custom-control-label" for="cart1" id="cart1t">Add to Cart <i class="fas fa-cart-plus"></i></label>
+      <label id="cart1i">Added to Cart!</label>
+    </div>
   </div>
 
   <div class="card">
@@ -50,7 +54,11 @@
     <h5 class="price">Was ksh 200</h5>
     <h5>Now ksh 100</h5>
     <h5>30 days to go</h5>
-    <h5><button class="add2" id="add2">Add to Cart <i class="fas fa-cart-plus"></i></button></h5>
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="cart2" value="cart2" name="carts2" onclick="myFunc2()">
+      <label class="custom-control-label" for="cart2" id="cart2t">Add to Cart <i class="fas fa-cart-plus"></i></label>
+      <label id="cart2i">Added to Cart!</label>
+    </div>
   </div>
   <div class="card">
     <img src="image/tuna.jpeg" alt="tuna" style="width: 5%">
@@ -58,7 +66,11 @@
     <h5 class="price">Was sh 100</h5>
     <h5>Now sh 50</h5>
     <h5>30 days to go</h5>
-    <h5><button class="add3" id="add3">Add to Cart <i class="fas fa-cart-plus"></i></button></h5>
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="cart3" value="cart3" name="carts3" onclick="myFunc3()">
+      <label class="custom-control-label" for="cart3" id="cart3t">Add to Cart <i class="fas fa-cart-plus"></i></label>
+      <label id="cart3i">Added to Cart!</label>
+    </div>
   </div>
   <div class="card">
     <img src="image/weetabix.jpeg" alt="weetabix" style="width: 5%">
@@ -66,7 +78,11 @@
     <h5 class="price">Was sh 200</h5>
     <h5>Now sh 150</h5>
     <h5>30 days to go</h5>
-    <h5><button class="add4" id="add4">Add to Cart <i class="fas fa-cart-plus"></i></button></h5>
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="cart4" value="cart4" name="carts4" onclick="myFunc4()">
+      <label class="custom-control-label" for="cart4" id="cart4t">Add to Cart <i class="fas fa-cart-plus"></i></label>
+      <label id="cart4i">Added to Cart!</label>
+    </div>
   </div>
   <div class="card">
     <img src="image/beverages-p.jpg" alt="weetabix" style="width: 15%">
@@ -74,7 +90,11 @@
     <h5 class="price">Was sh 200</h5>
     <h5>Now sh 150</h5>
     <h5>30 days to go</h5>
-    <h5><button class="add5" id="add5">Add to Cart <i class="fas fa-cart-plus"></i></button></h5>
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="cart5" value="cart5" name="carts5" onclick="myFunc5()">
+      <label class="custom-control-label" for="cart5" id="cart5t">Add to Cart <i class="fas fa-cart-plus"></i></label>
+      <label id="cart5i">Added to Cart!</label>
+    </div>
   </div>
   <div class="card">
     <h3><input type="submit" class="btn btn-success proceed" id="proceedbtn" value="Proceed"></h3>
@@ -142,10 +162,8 @@
     
       <div class="col-25">
         <div class="container1">
-          <h4>Items added to Cart</h4>
-            <span class="price" style="color:black">
-              <i class="fa fa-shopping-cart"></i>
-            </span>
+          <h4>Items added to Cart<i class="fa fa-shopping-cart"></i></h4>
+            <span class="price" style="color:black"></span>
           </h4>
           <p><a href="#">Cereals</a> <span class="price">ksh 100</span></p>
           <p><a href="#">Canned</a> <span class="price">ksh 100</span></p>
