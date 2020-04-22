@@ -50,28 +50,59 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".add").click(function(event) {event.preventDefault();
-  document.getElementById("add").innerHTML = "Added to cart!"
-	document.getElementById("add").style.color ="red"
-  });
-  $(".add2").click(function(event) {event.preventDefault();
-    document.getElementById("add2").innerHTML = "Added to cart!"
-    document.getElementById("add2").style.color ="red"
-    });
-  $(".add3").click(function(event) {event.preventDefault();
-    document.getElementById("add3").innerHTML = "Added to cart!"
-	  document.getElementById("add3").style.color ="red"
-    });
-  $(".add4").click(function(event) {event.preventDefault();
-    document.getElementById("add4").innerHTML = "Added to cart!"
-    document.getElementById("add4").style.color ="red"
-    });
-  $(".add5").click(function(event) {event.preventDefault();
-    document.getElementById("add5").innerHTML = "Added to cart!"
-    document.getElementById("add5").style.color ="red"
-    });
-});
+function myFunc(){
+  var checkBox = document.getElementById("cart1")
+if (checkBox.checked == true){
+  $("#cart1i").show();
+  $("#cart1t").hide();
+} else if (checkBox.checked == false) {
+  $("#cart1t").show();
+  $("#cart1i").hide();
+}
+};
+
+function myFunc2(){
+  var checkBox2 = document.getElementById("cart2")
+  if (checkBox2.checked == true){
+    $("#cart2i").show();
+    $("#cart2t").hide();
+  } else if (checkBox2.checked == false) {
+    $("#cart2t").show();
+    $("#cart2i").hide();
+  }
+  };
+
+  function myFunc3(){
+    var checkBox3 = document.getElementById("cart3")
+    if (checkBox3.checked == true){
+      $("#cart3i").show();
+      $("#cart3t").hide();
+    } else if (checkBox3.checked == false) {
+      $("#cart3t").show();
+      $("#cart3i").hide();
+    }
+    };
+
+function myFunc4(){
+  var checkBox4 = document.getElementById("cart4")
+  if (checkBox4.checked == true){
+    $("#cart4i").show();
+    $("#cart4t").hide();
+  } else if (checkBox4.checked == false) {
+    $("#cart4t").show();
+    $("#cart4i").hide();
+  }
+};
+function myFunc5(){
+  var checkBox5 = document.getElementById("cart5")
+  if (checkBox5.checked == true){
+    $("#cart5i").show();
+    $("#cart5t").hide();
+  } else if (checkBox5.checked == false) {
+    $("#cart5t").show();
+    $("#cart5i").hide();
+  }
+};
 
 
 

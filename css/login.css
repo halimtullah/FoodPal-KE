@@ -68,3 +68,10 @@ form {
       width: 20%;
     }
   }
+
+  body
+  {
+    background-image: url("../image/foodpals-search-banner.jpg");
+    background-size: cover;
+    color: whitesmoke;
+  }
