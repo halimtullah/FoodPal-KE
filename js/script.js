@@ -50,6 +50,29 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $(".add").click(function(event) {event.preventDefault();
+  document.getElementById("add").innerHTML = "Added to cart!"
+	document.getElementById("add").style.color ="red"
+  });
+  $(".add2").click(function(event) {event.preventDefault();
+    document.getElementById("add2").innerHTML = "Added to cart!"
+    document.getElementById("add2").style.color ="red"
+    });
+  $(".add3").click(function(event) {event.preventDefault();
+    document.getElementById("add3").innerHTML = "Added to cart!"
+	  document.getElementById("add3").style.color ="red"
+    });
+  $(".add4").click(function(event) {event.preventDefault();
+    document.getElementById("add4").innerHTML = "Added to cart!"
+    document.getElementById("add4").style.color ="red"
+    });
+  $(".add5").click(function(event) {event.preventDefault();
+    document.getElementById("add5").innerHTML = "Added to cart!"
+    document.getElementById("add5").style.color ="red"
+    });
+});
+
 
 
 
