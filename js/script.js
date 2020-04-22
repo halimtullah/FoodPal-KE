@@ -40,6 +40,15 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function () {
+  $("#proceedbtn").click(function(event){
+  $("#proceedbtn").hide();
+  $("#notshown").hide();
+  $("#checkout").slideDown(1000);
+  
+  	event.preventDefault();
+  });
+});
 
 
 
@@ -48,19 +57,11 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
-$(document).ready(function sendMsg() {
+function sendMsg() {
 	var name = $("#NAME").val();
 	var email = $("#EMAIL").val();
 	var message = $("#MESSAGE").val();
 	if (name !== "" && email !== "" && message !== ""){
 		alert("Hey " + name + "! Thank you for your message! We will review it and give you feedback. Check your email for our feedback soon.")
   }
-});
- 
+};
