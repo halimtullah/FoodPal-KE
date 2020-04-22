@@ -1,43 +1,18 @@
-#halim
-{
-  text-align: center;
-  font-family: 'Special Elite', cursive;
-}
-#ceo
-{
-  text-align: center;
-  font-family: 'Special Elite', cursive;
-}
-#sisi
-{
-  background-image: url("../image/food.jpg");
-}
-.col-md-4
-{
-  padding: 2%;
-  padding-right: 10%;
-}
-.card.mb-2
-{
-  width: 150%;
-  padding: 2%;
-}
 h2
 {
   font-family: 'Special Elite', cursive;
   font-size: 50px;
   text-align: center;
 }
-#about
+.head
 {
-  text-align: center;
-  font-family: 'Special Elite', cursive;
-  font-size: 40px;
-  background-image: url("../image/fruity.jpg");
-  background-size: cover;
   color: whitesmoke;
-  z-index: -8;
 }
+.title
+{
+ color: grey;
+}
+
 #about
 {
   padding-top: 4%;
@@ -57,7 +32,8 @@ h2
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #474e5d;
+  background-image: url("../image/fruity.jpg");
+  background-size: cover;
 }
 
 html {
@@ -68,7 +44,7 @@ html {
   box-sizing: inherit;
 }
 
-.column {
+.col-md-3 {
   float: left;
   width: 20%;
   margin-bottom: 16px;
@@ -78,13 +54,12 @@ html {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  text-align: center;
 }
 
 .about-section {
-  padding: 30px;
+  
   text-align: center;
-  background-color: #474e5d;
-  color: white;
 }
 
 .container {
@@ -97,10 +72,6 @@ html {
   display: table;
 }
 */
-
-.title {
-  color: grey;
-}
 
 .button {
   border: none;
