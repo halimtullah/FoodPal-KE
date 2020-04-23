@@ -111,20 +111,20 @@ let beverages = [
   },
   {
     beveragesId: 2,
-    beveragesName: "beer",
+    beveragesName: "youghurt",
     quantity: "500ml",
-    price: "sh. 100",
+    price: "sh. 50",
   },
   {
     beveragesId: 3,
-    beveragesName: "coffee",
-    quantity: "300grams",
+    beveragesName: "juice",
+    quantity: "300ml",
     price: "sh. 80",
   },
   {
     beveragesId: 4,
-    beveragesName: "drinking-water",
+    beveragesName: "vegetable juice",
     quantity: "1litre",
-    price: "sh. 20",
+    price: "sh. 50",
   },
 ];
