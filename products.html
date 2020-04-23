@@ -17,7 +17,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Food Pals</a>
+          <a class="navbar-brand" href="#">FoodPal</a>
         </div>
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
@@ -30,16 +30,16 @@
 
     <div class="container">
         <img src="image/foodpals-search-banner.jpg" alt="foodpals" width="100%" height="30%">
-        <div class="centered">Food Pals</div>
+        <div class="centered">Category 1</div>
     </div>
   </div>   
 
  <div id="notshown">
   <div class="card">
     <img src="image/cran-berry.jpeg" alt="cran-berry" style="width: 5%">
-    <h5>Cran Berry</h5>
+    <h5 id="cran">Cran Berry</h5>
     <h5 class="price">sh 150</h5>
-    <h5>Was sh 200</h5>
+    <h5 class="cranprice">Was sh 200</h5>
     <h5>30 days to go</h5>
     <div class="custom-control custom-checkbox custom-control-inline">
       <input type="checkbox" class="custom-control-input" id="cart1" value="cart1" name="carts1" onclick="myFunc()">
@@ -50,9 +50,9 @@
 
   <div class="card">
     <img src="image/milk.jpeg" alt="milk" style="width: 5%">
-    <h5>Nido Milk </h5>
+    <h5 id="milk">Nido Milk </h5>
     <h5 class="price">Was ksh 200</h5>
-    <h5>Now ksh 100</h5>
+    <h5 class="milkprice">Now ksh 100</h5>
     <h5>30 days to go</h5>
     <div class="custom-control custom-checkbox custom-control-inline">
       <input type="checkbox" class="custom-control-input" id="cart2" value="cart2" name="carts2" onclick="myFunc2()">
@@ -62,9 +62,9 @@
   </div>
   <div class="card">
     <img src="image/tuna.jpeg" alt="tuna" style="width: 5%">
-    <h5>Hilwa Tuna</h5>
+    <h5 id="tuna">Hilwa Tuna</h5>
     <h5 class="price">Was sh 100</h5>
-    <h5>Now sh 50</h5>
+    <h5 class="tunaprice">Now sh 50</h5>
     <h5>30 days to go</h5>
     <div class="custom-control custom-checkbox custom-control-inline">
       <input type="checkbox" class="custom-control-input" id="cart3" value="cart3" name="carts3" onclick="myFunc3()">
@@ -74,9 +74,9 @@
   </div>
   <div class="card">
     <img src="image/weetabix.jpeg" alt="weetabix" style="width: 5%">
-    <h5>Weetabix</h5>
+    <h5 id="weetabix">Weetabix</h5>
     <h5 class="price">Was sh 200</h5>
-    <h5>Now sh 150</h5>
+    <h5 class="wetprice">Now sh 150</h5>
     <h5>30 days to go</h5>
     <div class="custom-control custom-checkbox custom-control-inline">
       <input type="checkbox" class="custom-control-input" id="cart4" value="cart4" name="carts4" onclick="myFunc4()">
@@ -86,9 +86,9 @@
   </div>
   <div class="card">
     <img src="image/beverages-p.jpg" alt="weetabix" style="width: 15%">
-    <h5>Beverages</h5>
+    <h5 id="beverage">Beverages</h5>
     <h5 class="price">Was sh 200</h5>
-    <h5>Now sh 150</h5>
+    <h5 class="bevprice">Now sh 150</h5>
     <h5>30 days to go</h5>
     <div class="custom-control custom-checkbox custom-control-inline">
       <input type="checkbox" class="custom-control-input" id="cart5" value="cart5" name="carts5" onclick="myFunc5()">
@@ -97,7 +97,7 @@
     </div>
   </div>
   <div class="card">
-    <h3><input type="submit" class="btn btn-success proceed" id="proceedbtn" value="Proceed"></h3>
+    <h3><input type="submit" class="btn btn-success proceed" id="proceedbtn" value="Proceed" onclick="proceed()"></h3>
   </div>
  </div>
   
@@ -165,12 +165,42 @@
           <h4>Items added to Cart<i class="fa fa-shopping-cart"></i></h4>
             <span class="price" style="color:black"></span>
           </h4>
-          <p><a href="#">Cereals</a> <span class="price">ksh 100</span></p>
-          <p><a href="#">Canned</a> <span class="price">ksh 100</span></p>
-          <p><a href="#">Packaged</a> <span class="price">ksh 100</span></p>
-          <p><a href="#">Beverages</a> <span class="price">ksh 100</span></p>
-          <hr>
-          <p>Total <span class="price" style="color:black"><b>ksh 400</b></span></p>
+          <div id="your-orders">
+            <table class="table table-sm  orderstable">
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody id="ordersmade">
+                <tr class="item1">
+                  <td id="item1"></td>
+                  <td id="price1"></td>
+                </tr>
+                <tr class="item2">
+                  <td id="item2"></td>
+                  <td id="price2"></td>
+                </tr>
+                <tr class="item3">
+                  <td id="item3"></td>
+                  <td id="price3"></td>
+                </tr>
+                <tr class="item4">
+                  <td id="item4"></td>
+                  <td id="price4"></td>
+                </tr>
+                <tr class="item5">
+                  <td id="item5"></td>
+                  <td id="price5"></td>
+                </tr>
+                <tr>
+                  <td><b>Total</b></td>
+                  <td><b id="totale"></b></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
