@@ -21,7 +21,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: x-large;
+  font-size: 100px;
 }
   
 .card button {
@@ -154,6 +154,11 @@
   {
     display: none;
     color: red;
+  }
+
+  .item1,.item2,.item3,.item4,.item5
+  {
+    display: none;
   }
 
   
