@@ -171,6 +171,7 @@ function proceed(){
     $("#proceedbtn").hide();
     $("#notshown").hide();
     $("#checkout").slideDown(1000);
+    $(".centered").hide();
   }
   
   
