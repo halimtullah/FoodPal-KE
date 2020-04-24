@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 *,
 *:before,
 *:after {
@@ -166,7 +166,7 @@ textarea {
     left: 0;
   }
 }
-=======
+/* =======
 form {
     border: 3px solid #f1f1f1;
   }
@@ -244,4 +244,4 @@ form {
     background-size: cover;
     color: whitesmoke;
   }
->>>>>>> master
+>>>>>>> master */
