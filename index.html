@@ -1,64 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <title>FoodPals</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="image/cran-berry.jpeg">
+  <script src="js/script.js"></script>
+  <link href="css/bootstrap.css" rel ="stylesheet" type="text/css">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+  <title>FoodPal-KE</title>
 </head>
 <body>
-    
-    
-    <header><h2>FoodPal!</h2></header>
-<section>
-    <nav>
-        <ul>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">CEREALS</a></li>
-            <li><a href="#">GRAINS</a></li>
-            <li><a href="#">CANNED</a></li>
-            <li><a href="#">PACKED</a></li>
-            <li><a href="#">BEVERAGES</a></li>
-        </ul>
-    </nav>
-    <label>Select Category:</label>
-                <select class="custom-select custom-select-md mb-3" id="size" required="">
-                    <option value="cereal">Cereals</option>
-                    <option value="grains">Grains</option>
-                    <option value="canned">Canned</option>
-                    <option value="beverages">Beverages</option>
-                </select>
-                <input type="text" class="form-control" id="text" placeholder="Enter your location">
-            
-        <div class="landing">
-                    <img src="/image/supmkt.jpeg" height="1000px" alt="supmkt-img">
-                
-
-<div class="centered">
-    <h1>FoodPal</h1>
-    <p>Food is being wasted at an alarming rate. In the recent years food waste has been a global issue <br>
-        costing billions of dollars and increase carborn emissions, hence global warming. <br>
-        and yet food poverty has been on the rise.</p>
-    <p>Research indicates that if food waste were a country it could be a third country producer <br>
-        of carborn emission in the world after China and USA.</p>
+<div class="head">
+  <nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
+    <a class="navbar-brand" href="index.html">FoodPal-KE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#variety">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index2.html">Log in/Sign up</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav><br><br><br>
+<marquee behaviour= "scroll" direction ="right" scrollamount="15">
+<h class="scroll">Welcome to FoodPal🌮🍎🍔🥕!</h>
+</marquee>
+<h1>FoodPal is here for you<br>to easen the burden of high<br>food costs.</h1><br><br><br><br>
+<div class="arrow bounce"> <a href="#About"> <img src="image/arrow.icon" alt=" arrow"width="40px"></a><span id="About"></span><br><br></div>
 </div>
-</div>
-
-</section>
-
-    <div class="about">
-        <h1>ABOUT US</h1>
-        <p>Food Pals is a web application service that provide affodable source of nutrition to economically challenged people.</p>
-        <p>We have patnered with retailers to enable access to food products about to get expired to reach the needy people.</p>
-        <p>This is a win win situation where retailers sell products at discounted prices and the less fortunate people get access to quality food, hence feed the community.</p>
+<div class="about"><br><br><br>
+  <h2><b>Welcome To FoodPal-KE!</b></h2>
+  <p class="aboutustext">We are an organisation that helps people purchase food at a low cost. The organisation was started in the year 2020 during the covid-19 pandemic to help people purchase food at low costs as most of the people had no source of income due to lockdowns. FoodPal offers High quality, low prices and hassle-free shopping that gets you in and out.<br><a href="about-us.html" class="btn btn-success">About FoodPal</a></p>
+  <span id="variety"></span><br><br></div><br><br>
+<div class="products">
+  <h2 class="prod">Get Your Product Here!</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-2">
+        <a href="products.html">
+        <div id="work1">
+        <img class="card-img-top" src="image/naivas.png" alt="Card image cap" width="100%">
+        <div id="overlay"><h8 class="Overlay">Shop at<br>Naivas</h8></div>
+        </div>
+        </a>
+        <div class="card-body">
+          <h5 class="card-title"><b>Naivas.</b></h5>
+        </div>
+      </div>
     </div>
-    <footer>
-        <p>Contacts</p>
-    </footer>
-    <script src="js/script.js"></script>
-    
-            
+
+    <div class="col-md-4">
+      <div class="card mb-2">
+        <a href="products.html">
+        <div id="work2">
+        <img class="card-img-top" src="image/carrefour.png" alt="Card image cap" width="100%" height="357px">
+        <div id="overlay2"><h8 class="Overlay">Shop at<br>Carrefour</h8></div>
+        </div>
+        </a>
+        <div class="card-body">
+          <h5 class="card-title"><b>Carrefour.</b></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-2">
+        <a href="products.html">
+        <div id="work3">
+        <img class="card-img-top" src="image/tuskys.jpg" alt="Card image cap" width="100%">
+        <div id="overlay3"><h8 class="Overlay">Shop at<br>Tuskys</h8></div>
+        </div>
+        </a>
+        <div class="card-body">
+          <h5 class="card-title"><b>Tuskys.</b></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-2">
+        <a href="products.html">
+        <div id="work4">
+        <img class="card-img-top" src="image/eastmatt.jpeg" alt="Card image cap" width="100%">
+        <div id="overlay4"><h8 class="Overlay">Shop at<br>Eastmatt</h8></div>
+        </div>
+        </a>
+        <div class="card-body">
+          <h5 class="card-title"><b>Eastmatt.</b></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-2">
+        <a href="products.html">
+        <div id="work5">
+        <img class="card-img-top" src="image/magunas.jpeg" alt="Card image cap" width="100%" height="357px">
+        <div id="overlay5"><h8 class="Overlay">Shop at<br>Magunas</h8></div>
+        </div>
+        </a>
+        <div class="card-body">
+          <h5 class="card-title"><b>Magunas.</b></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-2">
+        <a href="products.html">
+        <div id="work6">
+        <img class="card-img-top" src="image/chandarana.jpg" alt="Card image cap" width="100%" height="357px">
+        <div id="overlay6"><h8 class="Overlay">Shop at<br>Chandarana</h8></div>
+        </div>  
+        </a>
+        <div class="card-body">
+        <h5 class="card-title"><b>Chandarana.</b></h5>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="contact">
+  <video autoplay loop class="video-background" muted plays-inline>
+    <source src="shop.mp4" type="video/mp4">
+  </video>
+  <div class="contact-overlay">
+  <h5><b><br>CONTACT US</b></h5>
+  <form action="https://formspree.io/xaydgrev" method="POST" name="feedback-form" class="validate" target="_blank" enctype=”multipart/form-data”>
+    <div class="form-row">
+      <div class="form-group col-md-2"></div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" name="NAME"  id="NAME" placeholder="Insert Name.." required>
+        </div>
+        <div class="form-group col-md-4">
+          <input type="email" class="form-control" name="EMAIL" id="EMAIL" placeholder="Insert Email.." required>
+        </div>
+        <div class="form-group col-md-2"></div>
+    </div><br>
+    <div class="form-group textarea">
+      <textarea type="text" class="form-control" name="MESSAGE" id="MESSAGE"  rows="6" placeholder="Type your message here.." required></textarea>
+    </div>
+    <input onclick="sendMsg()" type= "submit" value="Send Message" class="btn btn-outline-info" id="submit"></div>
+  </form>
+  </div>
+</div>
+</div>
+</div>
+<footer class="footer">
+  <div class="socialicons">
+    <a href="https://www.twitter.com" data-toggle="tooltip" title="Twitter" style="text-decoration: none;">
+    <img src="image/twitter.png" alt="twitter">
+    </a>
+    <a href="https://www.behance.net" data-toggle="tooltip" title="Behance" style="text-decoration: none;">
+    <img src="image/behance.png" alt="behance">
+    </a>
+    <a href="https://www.dribbble.com" data-toggle="tooltip" title="Dribbble" style="text-decoration: none;">
+    <img src="image/dribble.png" alt="dribble">
+    </a>
+    <a href="https://www.facebook.com" data-toggle="tooltip" title="Facebook" style="text-decoration: none;">
+    <img src="image/facebook.png" alt="facebook">
+    </a>
+    <a href="https://www.gmail.com" data-toggle="tooltip" title="G-mail" style="text-decoration: none;">
+    <img src="image/g_plus.png" alt="g_plus">
+    </a>
+    <a href="https://www.skype.com" data-toggle="tooltip" title="Skype" style="text-decoration: none;">
+    <img src="image/skype.png" alt="skype">
+    </a>
+    <a href="https://www.stumbleupon.com" data-toggle="tooltip" title="Stumbleupon" style="text-decoration: none;">
+    <img src="image/stumble_upon.png" alt="stumble">
+    </a>
+    <a href="https://www.pinterest.com" data-toggle="tooltip" title="Pinterest" style="text-decoration: none;">
+    <img src="image/pinterest.png" alt="pinterest">
+    </a>
+    <a href="https://www.youtube.com" data-toggle="tooltip" title="You Tube" style="text-decoration: none;">
+    <img src="image/you_tube.png" alt="you tube">
+    </a>
+    <a href="https://flickr.com" data-toggle="tooltip" title="Flickr" style="text-decoration: none;">
+    <img src="image/flickr.png" alt="flickr">
+    </a>
+  </div><br>
+  <p><b>FoodPal-KE</b></p>
+  <p><b>2020</b></p>
+</footer>
 </body>
+
 </html>
