@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 html {
@@ -6,18 +8,18 @@ html {
 }
 body {
   background: #f3f3f3;
-  font-family: 'Manjari', sans-serif;
+  font-family: "Manjari", sans-serif;
 }
 a {
   text-decoration: none;
   color: #1da1f2;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 a:hover {
   color: #0080ff;
 }
 .form {
-  background: rgb(22,19,54, 0.9);
+  background: rgb(22, 19, 54, 0.9);
   padding: 40px;
   max-width: 600px;
   margin: 40px auto;
@@ -45,7 +47,7 @@ a:hover {
   width: 50%;
   text-align: center;
   cursor: pointer;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 .top-area li a:hover {
   background: #0080ff;
@@ -55,11 +57,11 @@ a:hover {
   background: #1da1f2;
   color: #ffffff;
 }
- 
+
 .tab-content > div:last-child {
   display: none;
 }
- 
+
 h1 {
   text-align: center;
   color: #ffffff;
@@ -69,7 +71,7 @@ h1 {
 label {
   position: absolute;
   -webkit-transform: translateY(6px);
-          transform: translateY(6px);
+  transform: translateY(6px);
   left: 13px;
   color: rgba(255, 255, 255, 0.5);
   transition: all 0.25s ease;
@@ -83,7 +85,7 @@ label .req {
 }
 label.active {
   -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  transform: translateY(50px);
   left: 2px;
   font-size: 14px;
 }
@@ -93,7 +95,8 @@ label.active .req {
 label.highlight {
   color: #ffffff;
 }
-input, textarea {
+input,
+textarea {
   font-size: 22px;
   display: block;
   width: 100%;
@@ -103,9 +106,10 @@ input, textarea {
   border: 1px solid #a0b3b0;
   color: #ffffff;
   border-radius: 0;
-  transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: 0;
   border-color: #1da1f2;
 }
@@ -138,13 +142,14 @@ textarea {
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   background: #1da1f2;
   color: #ffffff;
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background: #0080ff;
 }
 .button-block {
@@ -156,7 +161,7 @@ textarea {
   text-align: right;
 }
 @media (max-width: 765px) {
-    label {
-      left: 0;
-    }    }
+  label {
+    left: 0;
+  }
 }
