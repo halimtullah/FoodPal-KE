@@ -1,97 +1,117 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Login/Sign up Form</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/login.css" rel="stylesheet" type="text/css" />
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/login.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
-      <a class="navbar-brand" href="index.html">FoodPal-KE</a>  
-    </nav>
-    <div class="login-page" id="login-page">
-      <div class="form">
-        <form class="register-form">
-
-          <p class="message">
-            Already Registered?
-            <a href="#login-form">Login</a>
-          </p>
-        </form>
-        <form class="login-form" id="login-form">
-
-          <p class="message">
-            Not Registered?
-            <a href="#login-page">Register</a>
-          </p>
-        </form>
-      </div>
-    </div>
-    <script>
+    <head>
+        <title>Login/Sign up Form</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/login.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/login.js"></script>
+    </head>
+    <body>
+        <div class="login-page" id="login-page">
+            <div class="form">
+                <form class="register-form">
+                    <input
+                        type="text"
+                        name="usernamereg"
+                        id="usernamereg"
+                        placeholder="user name"
+                    >
+                    <input
+                        type="text"
+                        name="passwordreg"
+                        id="passwordreg"
+                        placeholder="password"
+                    >
+                    <input type="text" placeholder="email">
+                    <button type="button" class="submit-register">Create</button>
+                    <p class="message">
+                        Already Registered?
+                        <a href="#login-form">Login</a>
+                    </p>
+                </form>
+                <form class="login-form" id="login-form">
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="user-name"
+                    >
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="password"
+                    >
+                    <button type="button" class="submit-login">Login</button>
+                    <p class="message">
+                        Not Registered?
+                        <a href="#login-page">Register</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <script>
       $(".message a").click(function () {
         $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
       });
       //login Here
       $(".submit-login").click(function () {
-        if (sessionStorage) {
+        if(sessionStorage) {
           //login here
           // localStorage.clear();
-          let username = $("#username").val();
-          let password = $("#password").val();
-          const user = username + ":" + password;
-          let userss = username + ":" + password;
-          // alert(user);
-          if (localStorage) {
-            // Store data
-            const allusers = localStorage.getItem("usersRegisted");
-            // alert(allusers.includes("ert:sdf")); // returns true
-            if (allusers.includes(userss)) {
-              sessionStorage.setItem("loggedUser", username);
-              sessionStorage.setItem("checkCart", username);
-              sessionStorage.setItem("logged", "true");
-              window.location.href = "products.html";
-            } else {
-              alert("Invalid Username or Password");
-            }
+            let username = $("#username").val();
+            let password = $("#password").val();
+            const user=username+":"+password;
+            let userss=username+":"+password;
+            // alert(user);
+              if(localStorage) {
+                // Store data
+                  const allusers = localStorage.getItem("usersRegisted");
+                  // alert(allusers.includes("ert:sdf")); // returns true
+                  if (allusers.includes(userss)) {
+                    sessionStorage.setItem("loggedUser", username);
+                    sessionStorage.setItem("checkCart", username);
+                    sessionStorage.setItem("logged", "true");
+                    window.location.href='products.html';
+                  }
+                  else{
+                    alert("Invalid Username or Password");
+                  }
+              } else {
+                  alert("Sorry, your browser do not support local storage.");
+              }
           } else {
-            alert("Sorry, your browser do not support local storage.");
+              alert("Sorry, your browser do not support session storage.");
           }
-        } else {
-          alert("Sorry, your browser do not support session storage.");
-        }
       });
       //register user here
       $(".submit-register").click(function () {
-        if (sessionStorage) {
+        if(sessionStorage) {
           // localStorage.clear();
-          let usernamereg = $("#usernamereg").val();
-          let passwordreg = $("#passwordreg").val();
-          const user = usernamereg + ":" + passwordreg;
-          // alert(user);
-          if (localStorage) {
-            // Store data
-            let usersRegisted = localStorage.getItem("usersRegisted");
-            if (usersRegisted === null) {
-              usersRegisted = [];
-            } else {
-              usersRegisted = JSON.parse(localStorage.getItem("usersRegisted"));
-            }
-            usersRegisted.push(JSON.stringify(user));
-            localStorage.setItem(
-              "usersRegisted",
-              JSON.stringify(usersRegisted)
-            );
-            alert("New Account Created");
-            window.location.href = "index2.html";
+            let usernamereg = $("#usernamereg").val();
+            let passwordreg = $("#passwordreg").val();
+            const user=usernamereg+":"+passwordreg;
+            // alert(user);
+              if(localStorage) {
+                // Store data
+                let usersRegisted= localStorage.getItem("usersRegisted");
+                  if (usersRegisted===null) {
+                    usersRegisted=[];
+                  }
+                  else{
+                    usersRegisted=JSON.parse(localStorage.getItem("usersRegisted"));
+                  }
+                    usersRegisted.push(JSON.stringify(user));
+                    localStorage.setItem("usersRegisted",JSON.stringify(usersRegisted));
+                   alert("New Account Created");
+                   window.location.href='index2.html';
+              } else {
+                  alert("Sorry, your browser do not support local storage.");
+              }
           } else {
-            alert("Sorry, your browser do not support local storage.");
+              alert("Sorry, your browser do not support session storage.");
           }
-        } else {
-          alert("Sorry, your browser do not support session storage.");
-        }
       });
-    </script>
-  </body>
+        </script>
+    </body>
 </html>
