@@ -35,79 +35,6 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
-  $("#work5")
-    .mouseover(function () {
-      $("#overlay5").show();
-    })
-    .mouseout(function () {
-      $("#overlay5").hide();
-    });
-  $("#work6")
-    .mouseover(function () {
-      $("#overlay6").show();
-    })
-    .mouseout(function () {
-      $("#overlay6").hide();
-    });
-});
-
-$(document).ready(function () {
-  if (sessionStorage) {
-    const addeditems = JSON.parse(sessionStorage.getItem("cartItems"));
-    $(".yourcartitems").html("");
-    $(".yourcartitems").append(
-      '<h4>Items added to Cart<i class="fa fa-shopping-cart"></i></h4>' +
-        +'<span class="price" style="color:black"></span></h4>'
-    );
-    var itemcount = 0,
-      itemtotal = 0;
-    addeditems.forEach(function (addeditem) {
-      var res = addeditem.split(":");
-      var youritem = res[0].replace('"', "").toString();
-      var yourprice = res[1].replace('"', "");
-      itemcount++;
-      yourprice = new Number(yourprice);
-      itemtotal = itemtotal + yourprice;
-      $(".yourcartitems").append(
-        '<p><a href="#"> ' +
-          youritem +
-          ' </a> <span class="price">ksh ' +
-          yourprice +
-          " </span></p>"
-      );
-    });
-    $(".yourcartitems").append(
-      "<hr><p>Total (" +
-        itemcount +
-        ') <span class="price" style="color:black"><b>ksh ' +
-        itemtotal +
-        "</b></span></p>"
-    );
-  }
-});
-$(document).ready(function () {
-  $("#proceedbtn").click(function (event) {
-    $("#proceedbtn").hide();
-    $("#notshown").hide();
-    if (sessionStorage) {
-      // Store data
-      let loggedusername = sessionStorage.getItem("loggedUser");
-      let logged = sessionStorage.getItem("logged");
-
-      if (logged === true) {
-        alert(loggedusername);
-        $("#checkout").slideDown(1000);
-      } else {
-        // alert("Not Logged In");
-        window.location.href = "index2.html";
-      }
-    } else {
-      alert("Sorry, your browser do not support session storage.");
-    }
-    event.preventDefault();
-  });
-});
 
 function myFunc(itemname, itemprice) {
   let cartitem = itemname + ":" + itemprice;
@@ -196,6 +123,8 @@ function myFunc(itemname, itemprice) {
 //     $("#cart5i").hide();
 //   }
 // };
+
+
 
 function sendMsg() {
   var name = $("#NAME").val();
