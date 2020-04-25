@@ -35,66 +35,83 @@
   </div>   
 
  <div id="notshown">
-  <div class="card">
-    <img src="image/cran-berry.jpeg" alt="cran-berry" style="width: 5%">
-    <h5>Cran Berry</h5>
-    <h5 class="price">sh 150</h5>
-    <h5>Was sh 200</h5>
-    <h5>30 days to go</h5>
-    <div class="custom-control custom-checkbox custom-control-inline">
-      <input type="checkbox" class="custom-control-input" id="cart1" value="cart1" name="carts1" onclick="myFunc()">
-      <label class="custom-control-label" for="cart1" id="cart1t">Add to Cart <i class="fas fa-cart-plus"></i></label>
-      <label id="cart1i">Added to Cart!</label>
+ <div class="row">
+ <div class="col-lg-12">
+  <div class="col-lg-4">
+    <div class="card" style="padding:10px;margin:1%;">
+      <img src="image/cran-berry.jpeg" alt="cran-berry" style="width: 300px;height:150px;">
+      <h5>Cran Berry</h5>
+      <h5 class="price"><del style="color:grey;"> Was Ksh 200</del> <span>Now sh 150</span></h5>
+      <!-- <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="cart1" value="cart1" name="carts1" onclick="myFunc()">
+        <label class="custom-control-label" for="cart1" id="cart1t">Add to Cart <i class="fas fa-cart-plus"></i></label>
+        <label id="cart1i">Added to Cart!</label>
+      </div> -->
+      <button style="background-color:green;padding:10px;text-align:center;" onclick="myFunc('Cran Berry','150')">Add To Cart</button>
+      <button style="background-color:red;width:100px;padding:10px;text-align:center;"><span style="background-color:white;color:black;">EXPIRES IN</span><br>30  <br> Days</button>
     </div>
   </div>
-
-  <div class="card">
-    <img src="image/milk.jpeg" alt="milk" style="width: 5%">
+  <div class="col-lg-4">
+  <div class="card" style="padding:10px;margin:1%;">
+    <img src="image/milk.jpeg" alt="milk" style="width: 300px;height:150px;">
     <h5>Nido Milk </h5>
-    <h5 class="price">Was ksh 200</h5>
-    <h5>Now ksh 100</h5>
-    <h5>30 days to go</h5>
-    <div class="custom-control custom-checkbox custom-control-inline">
+    <h5 class="price"><del style="color:grey;"> Was Ksh 200</del> <span>Now sh 100</span></h5>
+    
+    <!-- <div class="custom-control custom-checkbox custom-control-inline">
       <input type="checkbox" class="custom-control-input" id="cart2" value="cart2" name="carts2" onclick="myFunc2()">
       <label class="custom-control-label" for="cart2" id="cart2t">Add to Cart <i class="fas fa-cart-plus"></i></label>
       <label id="cart2i">Added to Cart!</label>
-    </div>
+    </div> -->
+    <button style="background-color:green;padding:10px;text-align:center;" onclick="myFunc('Nido Milk','100')">Add To Cart</button>
+    <button style="background-color:red;width:100px;padding:10px;text-align:center;"><span style="background-color:white;color:black;">EXPIRES IN</span><br>30  <br> Days</button>
   </div>
-  <div class="card">
-    <img src="image/tuna.jpeg" alt="tuna" style="width: 5%">
+  </div>
+  <div class="col-lg-4">
+  <div class="card" style="padding:10px;margin:1%;">
+    <img src="image/tuna.jpeg" alt="tuna" style="width: 300px;height:150px;">
     <h5>Hilwa Tuna</h5>
-    <h5 class="price">Was sh 100</h5>
-    <h5>Now sh 50</h5>
-    <h5>30 days to go</h5>
-    <div class="custom-control custom-checkbox custom-control-inline">
+    <h5 class="price"><del style="color:grey;"> Was Ksh 100</del> <span>Now sh 50</span></h5>
+    
+   <!--  <div class="custom-control custom-checkbox custom-control-inline">
       <input type="checkbox" class="custom-control-input" id="cart3" value="cart3" name="carts3" onclick="myFunc3()">
       <label class="custom-control-label" for="cart3" id="cart3t">Add to Cart <i class="fas fa-cart-plus"></i></label>
       <label id="cart3i">Added to Cart!</label>
-    </div>
+    </div> -->
+    <button style="background-color:green;padding:10px;text-align:center;" onclick="myFunc('Hilwa Tuna','50')">Add To Cart</button>
+    <button style="background-color:red;width:100px;padding:10px;text-align:center;"><span style="background-color:white;color:black;">EXPIRES IN</span><br>30  <br> Days</button>
   </div>
-  <div class="card">
-    <img src="image/weetabix.jpeg" alt="weetabix" style="width: 5%">
+  </div>
+  <div class="col-lg-4">
+  <div class="card" style="padding:10px;margin:1%;">
+    <img src="image/weetabix.jpeg" alt="weetabix" style="width: 300px;height:150px;">
     <h5>Weetabix</h5>
-    <h5 class="price">Was sh 200</h5>
-    <h5>Now sh 150</h5>
-    <h5>30 days to go</h5>
-    <div class="custom-control custom-checkbox custom-control-inline">
+    <h5 class="price"><del style="color:grey;"> Was Ksh 200</del> <span>Now sh 150</span></h5>
+    
+    <!-- <div class="custom-control custom-checkbox custom-control-inline">
       <input type="checkbox" class="custom-control-input" id="cart4" value="cart4" name="carts4" onclick="myFunc4()">
       <label class="custom-control-label" for="cart4" id="cart4t">Add to Cart <i class="fas fa-cart-plus"></i></label>
       <label id="cart4i">Added to Cart!</label>
-    </div>
+    </div> -->
+    <button style="background-color:green;padding:10px;text-align:center;" onclick="myFunc('Weetabix','150')">Add To Cart</button>
+    <button style="background-color:red;width:100px;padding:10px;text-align:center;"><span style="background-color:white;color:black;">EXPIRES IN</span><br>30  <br> Days</button>
   </div>
-  <div class="card">
-    <img src="image/beverages-p.jpg" alt="weetabix" style="width: 15%">
+  </div>
+  <div class="col-lg-4">
+  <div class="card" style="padding:10px;margin:1%;">
+    <img src="image/beverages-p.jpg" alt="weetabix" style="width: 300px;height:150px;">
     <h5>Beverages</h5>
-    <h5 class="price">Was sh 200</h5>
-    <h5>Now sh 150</h5>
-    <h5>30 days to go</h5>
-    <div class="custom-control custom-checkbox custom-control-inline">
+    <h5 class="price"><del style="color:grey;"> Was Ksh 200</del> <span>Now sh 150</span></h5>
+    
+    <!-- <div class="custom-control custom-checkbox custom-control-inline">
       <input type="checkbox" class="custom-control-input" id="cart5" value="cart5" name="carts5" onclick="myFunc5()">
       <label class="custom-control-label" for="cart5" id="cart5t">Add to Cart <i class="fas fa-cart-plus"></i></label>
       <label id="cart5i">Added to Cart!</label>
-    </div>
+    </div> -->
+    <button style="background-color:green;padding:10px;text-align:center;" onclick="myFunc('Beverages','150')">Add To Cart</button>
+    <button style="background-color:red;width:100px;padding:10px;text-align:center;"><span style="background-color:white;color:black;">EXPIRES IN</span><br>30  <br> Days</button>
+  </div>
+  </div>
+  </div>
   </div>
   <div class="card">
     <h3><input type="submit" class="btn btn-success proceed" id="proceedbtn" value="Proceed"></h3>
@@ -162,19 +179,65 @@
     
       <div class="col-25">
         <div class="container1">
+        <div class="yourcartitems">
           <h4>Items added to Cart<i class="fa fa-shopping-cart"></i></h4>
             <span class="price" style="color:black"></span>
           </h4>
-          <p><a href="#">Cereals</a> <span class="price">ksh 100</span></p>
-          <p><a href="#">Canned</a> <span class="price">ksh 100</span></p>
-          <p><a href="#">Packaged</a> <span class="price">ksh 100</span></p>
-          <p><a href="#">Beverages</a> <span class="price">ksh 100</span></p>
-          <hr>
-          <p>Total <span class="price" style="color:black"><b>ksh 400</b></span></p>
+            <p><a href="#">Cereals</a> <span class="price">ksh 100</span></p>
+            <p><a href="#">Canned</a> <span class="price">ksh 100</span></p>
+            <p><a href="#">Packaged</a> <span class="price">ksh 100</span></p>
+            <p><a href="#">Beverages</a> <span class="price">ksh 100</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>ksh 400</b></span></p>
+          </div>
         </div>
       </div>
     </div>
   
   </div>
+<!-- Trigger the modal with a button -->
+<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="modalTitle">Modal Header</h4>
+      </div>
+      <div class="modal-body" id="msg">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default continueshoppingbtn" style="background-color:grey;width:250px;text-align:left;" data-dismiss="modal">Continue Shopping</button>
+        <button type="button" class="btn btn-default checkoutbtn" style="background-color:red;width:250px;text-align:left;" data-dismiss="modal">CheckOut</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 </body>
+<script type="text/javascript">
+  $(document).ready(function () {
+  if(sessionStorage) {
+      // Store data
+      let loggedusername=sessionStorage.getItem("loggedUser");
+      let logged=sessionStorage.getItem("logged");
+        if (logged==="true") {
+          $("#proceedbtn").hide();
+          $("#notshown").hide();
+          $("#checkout").slideDown(1000);
+        }
+        else{
+          ("#proceedbtn").show();
+          $("#notshown").show();
+        }
+    } else {
+        alert("Sorry, your browser do not support session storage.");
+    }
+});
+</script>
 </html>
