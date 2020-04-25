@@ -1,66 +1,80 @@
 <html>
-  <head>
-    <title>Login/Sign up Form</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/login.css" rel="stylesheet" type="text/css" />
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/login.js"></script>
-  </head>
-  <body>
-    <div class="login-page" id="login-page">
-      <div class="form">
-        <form class="register-form">
-<<<<<<< HEAD
-          <input type="text" name="usernamereg" id="usernamereg" placeholder="user name" />
-          <input type="text" name="passwordreg" id="passwordreg" placeholder="password" />
-=======
-          <input
-            type="text"
-            name="usernamereg"
-            id="usernamereg"
-            placeholder="user name"
-          />
-          <input
-            type="text"
-            name="passwordreg"
-            id="passwordreg"
-            placeholder="password"
-          />
->>>>>>> gh-pages
-          <input type="text" placeholder="email" />
-          <button type="button" class="submit-register">Create</button>
-          <p class="message">
-            Already Registered?
-            <a href="#login-form">Login</a>
-          </p>
-        </form>
-        <form class="login-form" id="login-form">
-<<<<<<< HEAD
-          <input type="text" name="username" id="username" placeholder="user-name" />
-          <input type="password" name="password" id="password" placeholder="password" />
-=======
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="user-name"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="password"
-          />
->>>>>>> gh-pages
-          <button type="button" class="submit-login">Login</button>
-          <p class="message">
-            Not Registered?
-            <a href="#login-page">Register</a>
-          </p>
-        </form>
-      </div>
-    </div>
-    <script>
+    <head>
+        <title>Login/Sign up Form</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/login.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/login.js"></script>
+    </head>
+    <body>
+        <div class="login-page" id="login-page">
+            <div class="form">
+                <form class="register-form">
+                    <input
+                        type="text"
+                        name="usernamereg"
+                        id="usernamereg"
+                        placeholder="user name"
+                    >
+                    <input
+                        type="text"
+                        name="passwordreg"
+                        id="passwordreg"
+                        placeholder="password"
+                    >
+                    <input
+                        type="text"
+                        name="usernamereg"
+                        id="usernamereg"
+                        placeholder="user name"
+                    >
+                    <input
+                        type="text"
+                        name="passwordreg"
+                        id="passwordreg"
+                        placeholder="password"
+                    >
+                    <input type="text" placeholder="email">
+                    <button type="button" class="submit-register">Create</button>
+                    <p class="message">
+                        Already Registered?
+                        <a href="#login-form">Login</a>
+                    </p>
+                </form>
+                <form class="login-form" id="login-form">
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="user-name"
+                    >
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="password"
+                    >
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="user-name"
+                    >
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="password"
+                    >
+                    <button type="button" class="submit-login">Login</button>
+                    <p class="message">
+                        Not Registered?
+                        <a href="#login-page">Register</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <script>
       $(".message a").click(function () {
         $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
       });
@@ -122,6 +136,6 @@
               alert("Sorry, your browser do not support session storage.");
           }
       });
-    </script>
-  </body>
+        </script>
+    </body>
 </html>
