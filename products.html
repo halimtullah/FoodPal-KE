@@ -190,6 +190,7 @@
             <hr>
             <p>Total <span class="price" style="color:black"><b>ksh 400</b></span></p>
           </div>
+          <button type="button" class="empty-cart">Empty cart</button>
         </div>
       </div>
     </div>
@@ -221,18 +222,36 @@
 </div>
 </body>
 <script type="text/javascript">
-  $(document).ready(function () {
+ $(document).ready(function () {
+    $(".empty-cart").click(function () {
+    if(sessionStorage) {
+      sessionStorage.clear();
+      $("#proceedbtn").show();
+              $("#notshown").show();
+    }
+    });
+
   if(sessionStorage) {
       // Store data
       let loggedusername=sessionStorage.getItem("loggedUser");
       let logged=sessionStorage.getItem("logged");
         if (logged==="true") {
-          $("#proceedbtn").hide();
-          $("#notshown").hide();
-          $("#checkout").slideDown(1000);
+
+          let cartitems= sessionStorage.getItem("cartItems");
+            if (cartitems===null) {
+              $("#proceedbtn").show();
+              $("#notshown").show();
+            }
+            else{
+              $("#proceedbtn").hide();
+              $("#notshown").hide();
+              $("#checkout").slideDown(1000);
+            }
+
+          
         }
         else{
-          ("#proceedbtn").show();
+          $("#proceedbtn").show();
           $("#notshown").show();
         }
     } else {
