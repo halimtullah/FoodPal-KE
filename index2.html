@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Login/Sign up Form</title>
@@ -7,42 +8,20 @@
     <script src="js/login.js"></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html">FoodPal-KE</a>  
+    </nav>
     <div class="login-page" id="login-page">
       <div class="form">
         <form class="register-form">
-          <input
-            type="text"
-            name="usernamereg"
-            id="usernamereg"
-            placeholder="user name"
-          />
-          <input
-            type="text"
-            name="passwordreg"
-            id="passwordreg"
-            placeholder="password"
-          />
-          <input type="text" placeholder="email" />
-          <button type="button" class="submit-register">Create</button>
+
           <p class="message">
             Already Registered?
             <a href="#login-form">Login</a>
           </p>
         </form>
         <form class="login-form" id="login-form">
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="user-name"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="password"
-          />
-          <button type="button" class="submit-login">Login</button>
+
           <p class="message">
             Not Registered?
             <a href="#login-page">Register</a>

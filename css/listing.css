@@ -1,3 +1,10 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+}
+.bg-green {
+  background-color: green;
+  color: whitesmoke;
+  text-decoration: white;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
@@ -21,7 +28,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: x-large;
+  font-size: 100px;
 }
 
 .card button {
@@ -146,16 +153,4 @@ span.price {
 
 .custom-control.custom-checkbox.custom-control-inline {
   text-align: center;
-}
-
-#cart1i,
-#cart2i,
-#cart3i,
-#cart4i,
-#cart5i {
-  display: none;
-  color: red;
-}
-.nav-color {
-  background-color: green;
 }
